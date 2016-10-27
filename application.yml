@@ -5,9 +5,10 @@ application:
     name: sedex-kingfisher-api-gateway
 
 db:
+  url: jdbc:postgresql://10.0.40.12:5432/sedex_data_pipeline_v2_staging
   driverClass: org.postgresql.Driver
   username: kingfisher_api
-  
+  password: 5Q81q1qHXNHiGj5M  
 kingfisher:
   code:
     zc: ZC3252996
