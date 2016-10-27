@@ -100,6 +100,6 @@ kingfisher:
   code:
     zc:ZC1055758
     zu:ZU1013766
-	
+    
 logging:
   config: http://artefacts.internal.sedexonline.com/logconfig/sedex-kingfisher-api-gateway-staging.xml		
