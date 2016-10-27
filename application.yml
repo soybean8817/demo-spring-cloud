@@ -1,6 +1,3 @@
-spring.main.show_banner: false
-spring.profiles.active: dev
-
 application:
     name: sedex-kingfisher-api-gateway
 db:
