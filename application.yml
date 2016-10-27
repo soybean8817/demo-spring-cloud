@@ -7,7 +7,11 @@ application:
 db:
   driverClass: org.postgresql.Driver
   username: kingfisher_api
-
+  
+kingfisher:
+  code:
+    zc: ZC3252996
+    zu: ZU3252997
 
 ---
 spring:
