@@ -1,0 +1,47 @@
+spring.main.show_banner: false
+spring.profiles.active: dev
+
+application:
+    name: sedex-kingfisher-api-gateway
+
+db:
+  driverClass: org.postgresql.Driver
+  username: kingfisher_api
+
+
+---
+spring:
+    profiles: dev
+
+db:
+  url: jdbc:postgresql://localhost:5432/sedex_data_pipeline_v2_qa
+  driverClass: org.postgresql.Driver
+  username: kingfisher_api
+  password: kingfisher_api
+
+kingfisher:
+  code:
+    zc: ZC3252996
+    zu: ZU3252997
+
+---
+spring:
+    profiles: qa
+
+logging:
+  config: http://artefacts.internal.sedexonline.com/logconfig/sedex-kingfisher-api-gateway-qa.xml
+
+---
+spring:
+    profiles: staging
+
+logging:
+  config: http://artefacts.internal.sedexonline.com/logconfig/sedex-kingfisher-api-gateway-staging.xml
+
+---
+spring:
+    profiles: prod
+
+logging:
+  config: http://artefacts.internal.sedexonline.com/logconfig/sedex-kingfisher-api-gateway-prod.xml
+
