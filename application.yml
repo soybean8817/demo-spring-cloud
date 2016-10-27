@@ -3,7 +3,7 @@ application:
 
 security:
   basic:
-    enabled: false:
+    enabled: false
 
 db:
   url: jdbc:postgresql://10.0.40.12:5432/sedex_data_pipeline_v2_staging
