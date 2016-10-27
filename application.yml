@@ -1,9 +1,6 @@
 application:
   name: sedex-kingfisher-api-gateway
-    
-spring:
-  profiles: default:
-	
+
 security:
   basic:
     enabled: false:
@@ -58,16 +55,16 @@ kingfisher:
     zu: ZU3252997
 
 logging:
-  config: http://artefacts.internal.sedexonline.com/logconfig/sedex-kingfisher-api-gateway-prod.xml		
+  config: http://artefacts.internal.sedexonline.com/logconfig/sedex-kingfisher-api-gateway-prod.xml
 ---
 
 spring:
   profiles: qa
-	
+
 security:
   basic:
   enabled: false
-		
+
 db:
   url: jdbc:postgresql://10.0.40.10:5432/sedex_data_pipeline_v2_qa
   driverClass: org.postgresql.Driver
@@ -85,7 +82,7 @@ logging:
 
 spring:
   profiles: staging
-	
+
 security:
   basic:
     enabled: false
@@ -100,6 +97,6 @@ kingfisher:
   code:
     zc:ZC1055758
     zu:ZU1013766
-    
+
 logging:
-  config: http://artefacts.internal.sedexonline.com/logconfig/sedex-kingfisher-api-gateway-staging.xml		
+  config: http://artefacts.internal.sedexonline.com/logconfig/sedex-kingfisher-api-gateway-staging.xml
