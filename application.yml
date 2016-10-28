@@ -20,10 +20,6 @@ kingfisher:
 spring:
   profiles: dev
 
-security:
-  basic:
-    enabled: false
-
 db:
   url: jdbc:postgresql://10.0.40.12:5432/sedex_data_pipeline_v2_staging
   driverClass: org.postgresql.Driver
@@ -37,10 +33,6 @@ kingfisher:
 ---
 spring:
   profiles: prod
-
-security:
-  basic:
-    enabled: false
 
 db:
   url: jdbc:postgresql://10.0.40.12:5432/sedex_data_pipeline_v2_staging
@@ -60,10 +52,6 @@ logging:
 spring:
   profiles: qa
 
-security:
-  basic:
-  enabled: false
-
 db:
   url: jdbc:postgresql://10.0.40.10:5432/sedex_data_pipeline_v2_qa
   driverClass: org.postgresql.Driver
@@ -81,10 +69,6 @@ logging:
 
 spring:
   profiles: staging
-
-security:
-  basic:
-    enabled: false
 
 db:
   url: jdbc:postgresql://10.0.40.12:5432/sedex_data_pipeline_v2_staging
