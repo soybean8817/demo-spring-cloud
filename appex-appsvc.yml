@@ -1,0 +1,618 @@
+feature:
+    image:
+        height: 440
+        width: 7009
+fixedRate:
+    time: 6000
+icon:
+    height: 382
+    width: 382
+image:
+    height: 480
+    width: 770
+invalid:
+    attempts:
+        locked: 10
+        time:
+            max: 10000
+            min: 5000
+        timeout: 1
+language:
+    code:
+        default: en
+media:
+    max:
+        previewimage: 5
+multipart:
+    max-file-size: 200MB
+    max-request-size: 210MB
+pattern:
+    file: ([^\s]+(\.(?i)(7z|exe|zip|rar|apk))$)
+    image: ([^\s]+(\.(?i)(jpg|png|jpeg|gif|bmp))$)
+rate:
+    limitting: 100
+    limitting.blocktime: 60000
+sedex:
+    advance:
+        api:
+            timeout: 15000
+        user:
+            cachetime: 36000000
+
+API_KEY_NOT_NULL: API key not null.
+APPLICATION_SUSPEND: Application Suspended by Admin.
+APP_CALLBACK_URL_NOT_NULL: Application field call-back url not null
+APP_CLIENT_ID_NOT_NULL: Application's client id not null
+APP_DELETED: Application was deleted.
+APP_DID_NOT_PUBLISH: Please Submit Application before Suspend.
+APP_FIELD_APPURL_OR_MEDIA_NOT_NULL: Application field Url or Media not null.
+APP_FIELD_APP_URL_LENGTH: Application field App Url max length.
+APP_FIELD_AVAILABILITY_DATE_NOT_NULL: Application field Availability Date not null.
+APP_FIELD_CATEGORY_ID_LENGTH: Application field Category Id max length.
+APP_FIELD_CATEGORY_NOT_NULL: Application field Category not null.
+APP_FIELD_CREATED_DATE_NOT_NULL: Application field Created Date not null.
+APP_FIELD_LOCATES_NOT_NULL: Application field Locates not null.
+APP_FIELD_MEDIA_NOT_NULL: Application Media not null.
+APP_FIELD_NAME_LENGTH: Application field name max length.
+APP_FIELD_NAME_NOT_NULL: Application field Name not null.
+APP_FIELD_STATUS_LENGTH: Application field Status max length.
+APP_FIELD_VENDER_SITE_NOT_NULL: Application's vender site not null
+APP_FIELD_VENDOR_SITE_URL_LENGTH: Application field Vendor Site Url max length.
+APP_FIELD_VENDOR_SITE_URL_NOT_NULL: Field Vendor Site Url not null.
+APP_FIELD_VERSION_LENGTH: Application field Version max length.
+APP_FIELD_VERSION_NOT_NULL: Application field Version not null.
+APP_FIELD_WRONG_URL: Application's URL is invalid
+APP_FIELD_WRONG_VENDER_SITE: Application's vender site is invalid
+APP_ID_EXIST: Application Id existed.
+APP_LOCATE_LANGUAGE_LENGTH: Application's locate language is max length
+APP_LOCATE_LANGUAGE_NOT_NULL: Application's locate language is not null
+APP_LOCATE_NEW_NOT_NULL: Application's locate what's new is max length
+APP_MEDIA_ICON_EXCEED_LIMIT: Application's icon is required
+APP_MEDIA_ID_FILE_OR_ICON: Application require only one media for each app binary file, icon, feature image
+APP_MEDIA_ID_IMAGE: Number of application's images must in the range of 1 to 5
+APP_MEDIA_IMAGE_REQUIRED: Application's preview image is required
+APP_MUST_SUBSCRIBE: Please subscribe application before download application.
+APP_NAME_EXIST: Application's name was exist.
+APP_NOT_ALLOW_UPLOAD: We can upload binary file for draft application only
+APP_NOT_FOUND: Application doesn't exist.
+APP_PUBLISHED: This version was published. Please update version.
+APP_SUBMITTED: This version was submitted. Please update version.
+APP_UNAVAILABLE: Application is not available.
+APP_WRONG_VERSION: Application's version format is wrong. Please input like <number>.<number>.<number>.<number>
+CATEGORY_DELETE_SUCCESS: Category deleted successfully.
+CATEGORY_ID_USED: Category used for an applications.
+CATE_NOT_FOUND: Category not found.
+DO_NOT_HAVE_PERMISSION: You don't have permission on this item
+FEATURE_IMAGE_NOT_NULL: feature not null.
+FEATURE_IMAGE_SIZE_INCORRECT: Feature Image size incorrect.
+ICON_NOT_NULL: Icon not null.
+ICON_SIZE_INCORRECT: Icon size incorrect.
+IMAGE_NOT_NULL: Image not null.
+IMAGE_SIZE_INCORRECT: Image size incorrect.
+INVALID_API_KEY: Invalid API Key
+LANGUAGE_DEFAULT: Language default (English) is not found.
+LOCATE_FIELD_DESCRIPTION_NOT_NULL: field Description not null.
+LOCATE_FIELD_KEY_WORDS_LENGHT: field Key Words max lenght.
+LOCATE_FIELD_KEY_WORDS_NOT_NULL: field Key Words not null.
+LOCATE_FIELD_TERM_NOT_NULL: Locate field Term not null.
+LOCATE_FIELD_WHAT_NEW_NOT_NULL: field What New not null.
+LOCATE_NOT_SUPPORT: Not support this language.
+MEDIA_FIELD_URL_NOT_NULL: Media field URL not null.
+MEDIA_ID_NOT_AVAILABLE: Have a Media id not found.
+MEDIA_ID_USED: Has a Media id used. Please check again.
+MEMBER_NOT_SUBSCRIBED: User did not subscribe this application yet.
+MEMBER_SUBSCRIBED: This user already subscribed.
+NOT_FILE: Invalid file format! Please select a valid file and try again.
+NOT_IMAGE: Upload file must image.
+OAUTH_KEY_FIELD_ACCESS_TOKEN_NOT_NULL: Oauth field access token not null.
+OAUTH_KEY_FIELD_APP_ID_NOT_NULL: Oauth field appId not null.
+OAUTH_KEY_FIELD_EXPIRES_NOT_NULL: Oauth field expires not null.
+OAUTH_KEY_FIELD_ID_NOT_NULL: Oauth field id not null.
+OAUTH_KEY_FIELD_JTI_NOT_NULL: Oauth field jti not null.
+OAUTH_KEY_FIELD_SCOPE_NOT_NULL: Oauth field scope not null.
+OAUTH_KEY_FIELD_TOKEN_TYPE_NOT_NULL: Oauth field token type not null.
+ORG_NOT_FOUND: Organisation not found
+ORG_NOT_SUBSCRIBED: Your Org was not subscribed this application
+PUBLISHER_API_KEY_LENGTH: Publisher api key max length.
+PUBLISHER_API_KEY_NOT_NULL: Publisher api key not null.
+PUBLISHER_END_POINT_LENGTH: Publisher end point max length.
+PUBLISHER_END_POINT_NOT_NULL: Publisher end point not null.
+PUBLISHER_FIELD_TERM_NOT_NULL: Publisher term not null.
+PUBLISHER_INF_NOT_FOUND: Publisher information not found.
+PUBLISHER_TERM_NOT_FOUND: Term not found.
+PUSH_PASSWORD_NOT_NULL: Field Push Pass Word not null.
+PUSH_USER_NAME_NOT_NULL: Field Push User Name not null.
+RATING_NOT_FOUND: Rating not found.
+RESOURCE_NOT_FOUND: Resource doesn't exist
+REVIEW_NOT_FOUND: Review not found.
+SEDEX_ERROR: Sedex service error
+TERM_NOT_AVAILABLE: Term not available.
+UNAUTHORISED: UNAUTHORISED
+UPLOAD_FAIL: Uploading fail
+UPLOAD_FILE: Application Id Upload file not more than one File.
+UPLOAD_ICON: Application Id Upload Icon not more than one Icon.
+UPLOAD_IMAGE: Application Id Upload Image not more than five Image.
+URL_INVALID: Url Invalid.
+USER_LOCKED: You are locked.
+USER_NAME_NOT_FOUND: User Name donesn't exist.
+USER_NOT_FOUND: The user was not found
+USER_SUSPEND: Please Active User to be continuous.
+WRONG_DATE_FORMAT: Date's format is wrong. Please input like 1985-12-18T13:00:00Z.
+
+---
+dataSource:
+    connection:
+        driver: com.mysql.jdbc.Driver
+        password: hmvn123456
+        url: jdbc:mysql://172.25.0.200:3306/appx?useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8
+        user: sedex
+database:
+    hibernate:
+        cache:
+            use_second_level_cache: true
+        connection:
+            autocommit: false
+            pool_size: 10
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: false
+        jdbc:
+            batch_size: 20
+        max_fetch_depth: 4
+        schema_update: update
+        show_sql: false
+        use_sql_comments: false
+execute:
+    changelog: true
+logging:
+    level:
+        org:
+            hibernate: ERROR
+            springframework:
+                web: DEBUG
+    path: D:/app_log/appex
+security:
+    basic:
+        enabled: false
+server:
+    error:
+        whitelabel:
+            enabled: false
+    port: 8585
+    ssl:
+        key-password: dBIeKf2DQHY7VVx
+        key-store: classpath:sedex-2016.jks
+        key-store-password: dBIeKf2DQHY7VVx
+spring:
+    profiles:
+        active: default
+app:
+    cdn: local
+    service:
+        home: https://localhost:8585
+        security: https://localhost:8585/login/cas/1
+    web:
+        home: http://localhost:9000
+        success: http://localhost:9000/#/success/
+cas:
+    service:
+        login: https://stage.sedexonline.com/sso/index.html
+        logout: https://stage.sedexonline.com/sso/app/singlelogout
+    url:
+        prefix: https://stage.sedexonline.com/sso
+        suffix: ''
+cdn:
+    dir: C:/appex/sedex
+default:
+    pushing:
+        endpoint: http://localhost:8989/api/publisher/dummys
+sedex:
+    advance:
+        endpoint:
+            org: https://appex-api-stage.sedexonline.com/api/orgs/{id}
+            orgsites: https://appex-api-stage.sedexonline.com/api/orgs/{id}/sites
+            orgusers: https://appex-api-stage.sedexonline.com/api/users/organisation/{id}?app=advance
+            site: https://appex-api-stage.sedexonline.com/api/orgs/{org_id}/sites/{id}
+            siteusers: https://appex-api-stage.sedexonline.com/api/users/site/{id}
+            user: https://appex-api-stage.sedexonline.com/api/users/{id}
+            userid: 5Fb63CdBuNBq8KxD6JMRT4Cp
+            userpass: S2CwVR9x8XCc2mRaVdYDmBFBGjzG7DYh26Ha
+        oauth:
+            key: http://stage.sedexonline.com/sso/oauth/token?grant_type={grant_type}&scope={scope}&client-id={client-id}
+            register:
+                client: http://stage.sedexonline.com/sso/oauth-clients/{client-id}
+            userid: app-exchange
+            userpass: fc5e038d38a57032085441e7fe7010b0
+spring:
+    oauth2:
+        jwt:
+            verifier-key: AAAAB3NzaC1yc2EAAAADAQABAAACAQC/b6WEPuJ5UpHk34wM7mBSJ3dSRn3M/UvDyVss0ysQO1Gc8CzjPsGBf+agOP9oCYvIOXq8D5/qLC30ezo3BBFdhfr3k7MO6vePYoKqzfnnA11AJMt7A9xWrcE2cPiFWW6IU6OFyWjKEOvEWRMI3O6wMxuGTT5NeBegxiXRriTNKBu+g/S4A1d+h7MOYbZt6vxpwSFDqiDZ8fjtdf9Is1Fn52S2KV/zVza5Gnm30XRmTyou5RzjUIosJUAq/fSXVf5cHl3IDU2p9zFRsoEzMOoZXfANl2KsqBA/6Nez/pbGLI14P/3TnBX2nyKyiG285IsMINBlojkM1d/iIjRuBWTy8Ey+zZPXSPfn8idjyLHZq+QWX/7hi11JhbU/JZvOIiea78hlduqS2foYDDz7c+2StvPKo0x7U9IuZg//knEdM/CDR/Pmix0fHzxTl5PSFzL++ngQ6xQHM15jCiROUuFhBnGn9QAisS4Te4aTOMZRNbaQywAbV6iiHzmBWtvhmxXOTlp9RVUtUvUpmW9P6lAdOEdd5LootK0BvxfjjeLzttHNsha3HuMCFk+3iF5XTqIDdHeTF+xkodnPZVPRwCiCwkHwpa1YkKD2K5El3Iqp+eOqrVHlJKTXAycUfk9/9+hB1rp6nVgIeIlUgNKqR1KhfEeMSpp5Fu1ZYWFAVjr1lw==
+            verifier-scope: appx
+
+---
+Source:
+    connection:
+        driver: com.mysql.jdbc.Driver
+        password: Sedex123$
+        url: jdbc:mysql://localhost:3306/appex?useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8
+        user: sedexadmin
+database:
+    hibernate:
+        cache:
+            use_second_level_cache: true
+        connection:
+            autocommit: false
+            pool_size: 10
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: false
+        jdbc:
+            batch_size: 20
+        max_fetch_depth: 4
+        schema_update: update
+        show_sql: false
+        use_sql_comments: false
+execute:
+    changelog: true
+logging:
+    level:
+        org:
+            hibernate: ERROR
+            springframework:
+                web: DEBUG
+    path: D:/app_log/appexdev
+security:
+    basic:
+        enabled: false
+server:
+    error:
+        whitelabel:
+            enabled: false
+    port: 8787
+    ssl:
+        key-password: qazwsxedc
+        key-store: classpath:sedex.jks
+        key-store-password: qazwsxedc
+spring:
+    profiles:
+        active: dev
+app:
+    cdn: google
+    service:
+        home: https://appx-qa.sedexonline.com:8787
+        security: https://appx-qa.sedexonline.com:8787/login/cas
+    web:
+        home: http://localhost:9000
+        success: http://localhost:9000/#/success/
+cas:
+    service:
+        login: https://stage.sedexonline.com/sso/index.html
+        logout: https://stage.sedexonline.com/sso/app/singlelogout
+    url:
+        prefix: https://stage.sedexonline.com/sso
+cdn:
+    dir: sedex
+default:
+    pushing:
+        endpoint: http://localhost:8989/api/publisher/dummys
+google:
+    cdn:
+        account: appex-141@sedex-app-exchange.iam.gserviceaccount.com
+        application:
+            name: sedex-app-exchange
+        private:
+            key: sedex-app-exchange.p12
+        root:
+            bucket: appexdev
+sedex:
+    advance:
+        endpoint:
+            org: https://appex-api-stage.sedexonline.com/api/orgs/{id}
+            orgsites: https://appex-api-stage.sedexonline.com/api/orgs/{id}/sites
+            orgusers: https://appex-api-stage.sedexonline.com/api/users/organisation/{id}?app=advance
+            site: https://appex-api-stage.sedexonline.com/api/orgs/{org_id}/sites/{id}
+            siteusers: https://appex-api-stage.sedexonline.com/api/users/site/{id}
+            user: https://appex-api-stage.sedexonline.com/api/users/{id}
+            userid: 5Fb63CdBuNBq8KxD6JMRT4Cp
+            userpass: S2CwVR9x8XCc2mRaVdYDmBFBGjzG7DYh26Ha
+        oauth:
+            key: http://stage.sedexonline.com/sso/oauth/token?grant_type={grant_type}&scope={scope}&client-id={client-id}
+            register:
+                client: http://stage.sedexonline.com/sso/oauth-clients/{client-id}
+            userid: app-exchange
+            userpass: fc5e038d38a57032085441e7fe7010b0
+spring:
+    oauth2:
+        jwt:
+            verifier-key: AAAAB3NzaC1yc2EAAAADAQABAAACAQC/b6WEPuJ5UpHk34wM7mBSJ3dSRn3M/UvDyVss0ysQO1Gc8CzjPsGBf+agOP9oCYvIOXq8D5/qLC30ezo3BBFdhfr3k7MO6vePYoKqzfnnA11AJMt7A9xWrcE2cPiFWW6IU6OFyWjKEOvEWRMI3O6wMxuGTT5NeBegxiXRriTNKBu+g/S4A1d+h7MOYbZt6vxpwSFDqiDZ8fjtdf9Is1Fn52S2KV/zVza5Gnm30XRmTyou5RzjUIosJUAq/fSXVf5cHl3IDU2p9zFRsoEzMOoZXfANl2KsqBA/6Nez/pbGLI14P/3TnBX2nyKyiG285IsMINBlojkM1d/iIjRuBWTy8Ey+zZPXSPfn8idjyLHZq+QWX/7hi11JhbU/JZvOIiea78hlduqS2foYDDz7c+2StvPKo0x7U9IuZg//knEdM/CDR/Pmix0fHzxTl5PSFzL++ngQ6xQHM15jCiROUuFhBnGn9QAisS4Te4aTOMZRNbaQywAbV6iiHzmBWtvhmxXOTlp9RVUtUvUpmW9P6lAdOEdd5LootK0BvxfjjeLzttHNsha3HuMCFk+3iF5XTqIDdHeTF+xkodnPZVPRwCiCwkHwpa1YkKD2K5El3Iqp+eOqrVHlJKTXAycUfk9/9+hB1rp6nVgIeIlUgNKqR1KhfEeMSpp5Fu1ZYWFAVjr1lw==
+            verifier-scope: appx
+
+---
+dataSource:
+    connection:
+        driver: com.mysql.jdbc.Driver
+        password: Sedex123$
+        url: jdbc:mysql://192.168.1.98:3306/appexqa?useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8
+        user: sedexadmin
+database:
+    hibernate:
+        cache:
+            use_second_level_cache: true
+        connection:
+            autocommit: false
+            pool_size: 10
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: false
+        jdbc:
+            batch_size: 20
+        max_fetch_depth: 4
+        schema_update: update
+        show_sql: false
+        use_sql_comments: false
+execute:
+    changelog: true
+logging:
+    level:
+        org:
+            hibernate: ERROR
+            springframework:
+                web: DEBUG
+    path: /var/sedex/appex/log
+security:
+    basic:
+        enabled: false
+server:
+    error:
+        whitelabel:
+            enabled: false
+    port: 8585
+    ssl:
+        key-password: qazwsxedc
+        key-store: classpath:sedex.jks
+        key-store-password: qazwsxedc
+spring:
+    profiles:
+        active: qa
+app:
+    cdn: google
+    service:
+        home: https://appx-qa.sedexonline.com:8585
+        security: https://appx-qa.sedexonline.com:8585/login/cas
+    web:
+        home: https://appx-qa.sedexonline.com:9000
+        success: https://appx-qa.sedexonline.com:9000/#/success/
+cas:
+    service:
+        login: https://stage.sedexonline.com/sso/index.html
+        logout: https://stage.sedexonline.com/sso/app/singlelogout
+    url:
+        prefix: https://stage.sedexonline.com/sso
+cdn:
+    dir: sedex
+default:
+    pushing:
+        endpoint: http://14.161.50.4:8989/api/publisher/dummys
+google:
+    cdn:
+        account: appex-141@sedex-app-exchange.iam.gserviceaccount.com
+        application:
+            name: sedex-app-exchange
+        private:
+            key: sedex-app-exchange.p12
+        root:
+            bucket: appexqa
+sedex:
+    advance:
+        endpoint:
+            org: https://appex-api-stage.sedexonline.com/api/orgs/{id}
+            orgsites: https://appex-api-stage.sedexonline.com/api/orgs/{id}/sites
+            orgusers: https://appex-api-stage.sedexonline.com/api/users/organisation/{id}?app=advance
+            site: https://appex-api-stage.sedexonline.com/api/orgs/{org_id}/sites/{id}
+            siteusers: https://appex-api-stage.sedexonline.com/api/users/site/{id}
+            user: https://appex-api-stage.sedexonline.com/api/users/{id}
+            userid: 5Fb63CdBuNBq8KxD6JMRT4Cp
+            userpass: S2CwVR9x8XCc2mRaVdYDmBFBGjzG7DYh26Ha
+        oauth:
+            key: http://stage.sedexonline.com/sso/oauth/token?grant_type={grant_type}&scope={scope}&client-id={client-id}
+            register:
+                client: http://stage.sedexonline.com/sso/oauth-clients/{client-id}
+            userid: app-exchange
+            userpass: fc5e038d38a57032085441e7fe7010b0
+spring:
+    oauth2:
+        jwt:
+            verifier-key: AAAAB3NzaC1yc2EAAAADAQABAAACAQC/b6WEPuJ5UpHk34wM7mBSJ3dSRn3M/UvDyVss0ysQO1Gc8CzjPsGBf+agOP9oCYvIOXq8D5/qLC30ezo3BBFdhfr3k7MO6vePYoKqzfnnA11AJMt7A9xWrcE2cPiFWW6IU6OFyWjKEOvEWRMI3O6wMxuGTT5NeBegxiXRriTNKBu+g/S4A1d+h7MOYbZt6vxpwSFDqiDZ8fjtdf9Is1Fn52S2KV/zVza5Gnm30XRmTyou5RzjUIosJUAq/fSXVf5cHl3IDU2p9zFRsoEzMOoZXfANl2KsqBA/6Nez/pbGLI14P/3TnBX2nyKyiG285IsMINBlojkM1d/iIjRuBWTy8Ey+zZPXSPfn8idjyLHZq+QWX/7hi11JhbU/JZvOIiea78hlduqS2foYDDz7c+2StvPKo0x7U9IuZg//knEdM/CDR/Pmix0fHzxTl5PSFzL++ngQ6xQHM15jCiROUuFhBnGn9QAisS4Te4aTOMZRNbaQywAbV6iiHzmBWtvhmxXOTlp9RVUtUvUpmW9P6lAdOEdd5LootK0BvxfjjeLzttHNsha3HuMCFk+3iF5XTqIDdHeTF+xkodnPZVPRwCiCwkHwpa1YkKD2K5El3Iqp+eOqrVHlJKTXAycUfk9/9+hB1rp6nVgIeIlUgNKqR1KhfEeMSpp5Fu1ZYWFAVjr1lw==
+            verifier-scope: appx
+
+---
+dataSource:
+    connection:
+        driver: com.mysql.jdbc.Driver
+        password: Sedex123$
+        url: jdbc:mysql://173.194.104.109:3306/appex?useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8
+        user: sedexadmin
+database:
+    hibernate:
+        cache:
+            use_second_level_cache: true
+        connection:
+            autocommit: false
+            pool_size: 10
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: false
+        jdbc:
+            batch_size: 20
+        max_fetch_depth: 4
+        schema_update: update
+        show_sql: false
+        use_sql_comments: false
+execute:
+    changelog: true
+logging:
+    level:
+        org:
+            hibernate: ERROR
+            springframework:
+                web: DEBUG
+    path: /var/sedex/appex/log
+security:
+    basic:
+        enabled: false
+server:
+    error:
+        whitelabel:
+            enabled: false# Datasource Config
+    port: 8585
+    ssl:
+        key-password: qazwsxedc
+        key-store: classpath:sedex.jks
+        key-store-password: qazwsxedc
+spring:
+    profiles:
+        active: staging
+app:
+    cdn: google
+    service:
+        home: https://appx-stage.sedexonline.com:8585/
+        security: https://appx-stage.sedexonline.com:8585/login/cas
+    web:
+        home: https://appx-stage.sedexonline.com
+        success: https://appx-stage.sedexonline.com/#/success/
+cas:
+    service:
+        login: https://stage.sedexonline.com/sso/index.html
+        logout: https://stage.sedexonline.com/sso/app/singlelogout
+    url:
+        prefix: https://stage.sedexonline.com/sso
+cdn:
+    dir: sedex
+default:
+    pushing:
+        endpoint: http://14.161.50.4:8989/api/publisher/dummys
+google:
+    cdn:
+        account: appex-141@sedex-app-exchange.iam.gserviceaccount.com
+        application:
+            name: sedex-app-exchange
+        private:
+            key: sedex-app-exchange.p12
+        root:
+            bucket: appexstage
+sedex:
+    advance:
+        endpoint:
+            org: https://appex-api-stage.sedexonline.com/api/orgs/{id}
+            orgsites: https://appex-api-stage.sedexonline.com/api/orgs/{id}/sites
+            orgusers: https://appex-api-stage.sedexonline.com/api/users/organisation/{id}?app=advance
+            site: https://appex-api-stage.sedexonline.com/api/orgs/{org_id}/sites/{id}
+            siteusers: https://appex-api-stage.sedexonline.com/api/users/site/{id}
+            user: https://appex-api-stage.sedexonline.com/api/users/{id}
+            userid: 5Fb63CdBuNBq8KxD6JMRT4Cp
+            userpass: S2CwVR9x8XCc2mRaVdYDmBFBGjzG7DYh26Ha
+        oauth:
+            key: http://stage.sedexonline.com/sso/oauth/token?grant_type={grant_type}&scope={scope}&client-id={client-id}
+            register:
+                client: http://stage.sedexonline.com/sso/oauth-clients/{client-id}
+            userid: app-exchange
+            userpass: fc5e038d38a57032085441e7fe7010b0
+spring:
+    oauth2:
+        jwt:
+            verifier-key: AAAAB3NzaC1yc2EAAAADAQABAAACAQC/b6WEPuJ5UpHk34wM7mBSJ3dSRn3M/UvDyVss0ysQO1Gc8CzjPsGBf+agOP9oCYvIOXq8D5/qLC30ezo3BBFdhfr3k7MO6vePYoKqzfnnA11AJMt7A9xWrcE2cPiFWW6IU6OFyWjKEOvEWRMI3O6wMxuGTT5NeBegxiXRriTNKBu+g/S4A1d+h7MOYbZt6vxpwSFDqiDZ8fjtdf9Is1Fn52S2KV/zVza5Gnm30XRmTyou5RzjUIosJUAq/fSXVf5cHl3IDU2p9zFRsoEzMOoZXfANl2KsqBA/6Nez/pbGLI14P/3TnBX2nyKyiG285IsMINBlojkM1d/iIjRuBWTy8Ey+zZPXSPfn8idjyLHZq+QWX/7hi11JhbU/JZvOIiea78hlduqS2foYDDz7c+2StvPKo0x7U9IuZg//knEdM/CDR/Pmix0fHzxTl5PSFzL++ngQ6xQHM15jCiROUuFhBnGn9QAisS4Te4aTOMZRNbaQywAbV6iiHzmBWtvhmxXOTlp9RVUtUvUpmW9P6lAdOEdd5LootK0BvxfjjeLzttHNsha3HuMCFk+3iF5XTqIDdHeTF+xkodnPZVPRwCiCwkHwpa1YkKD2K5El3Iqp+eOqrVHlJKTXAycUfk9/9+hB1rp6nVgIeIlUgNKqR1KhfEeMSpp5Fu1ZYWFAVjr1lw==
+            verifier-scope: appx
+
+---
+dataSource:
+    connection:
+        driver: com.mysql.jdbc.Driver
+        password: /t7ht17Kqqp953L
+        url: jdbc:mysql://173.194.232.169:3306/appex?useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8
+        user: sedexadmin
+database:
+    hibernate:
+        cache:
+            use_second_level_cache: true
+        connection:
+            autocommit: false
+            pool_size: 10
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: false
+        jdbc:
+            batch_size: 20
+        max_fetch_depth: 4
+        schema_update: update
+        show_sql: false
+        use_sql_comments: false
+execute:
+    changelog: true
+logging:
+    level:
+        org:
+            hibernate: ERROR
+            springframework:
+                web: DEBUG
+    path: /var/sedex/appex/log
+security:
+    basic:
+        enabled: false
+server:
+    error:
+        whitelabel:
+            enabled: false
+    port: 8585
+    ssl:
+        key-password: 1234567890
+        key-store: classpath:keystore.jks
+        key-store-password: 1234567890
+spring:
+    profiles:
+        active: prod
+app:
+    cdn: google
+    service:
+        home: https://appx-stage.sedexonline.com:8585/
+        security: https://appx-stage.sedexonline.com:8585/login/cas
+    web:
+        home: https://appx-stage.sedexonline.com
+        success: https://appx-stage.sedexonline.com/#/success/
+cas:
+    service:
+        login: https://stage.sedexonline.com/sso/index.html
+        logout: https://stage.sedexonline.com/sso/app/singlelogout
+    url:
+        prefix: https://stage.sedexonline.com/sso
+cdn:
+    dir: sedex
+default:
+    pushing:
+        endpoint: http://localhost:8989/api/publisher/dummys
+google:
+    cdn:
+        account: appex-141@sedex-app-exchange.iam.gserviceaccount.com
+        application:
+            name: sedex-app-exchange
+        private:
+            key: sedex-app-exchange.p12
+        root:
+            bucket: appexprod
+sedex:
+    advance:
+        endpoint:
+            org: https://appex-api-stage.sedexonline.com/api/orgs/{id}
+            orgsites: https://appex-api-stage.sedexonline.com/api/orgs/{id}/sites
+            orgusers: https://appex-api-stage.sedexonline.com/api/users/organisation/{id}?app=advance
+            site: https://appex-api-stage.sedexonline.com/api/orgs/{org_id}/sites/{id}
+            siteusers: https://appex-api-stage.sedexonline.com/api/users/site/{id}
+            user: https://appex-api-stage.sedexonline.com/api/users/{id}
+            userid: 5Fb63CdBuNBq8KxD6JMRT4Cp
+            userpass: S2CwVR9x8XCc2mRaVdYDmBFBGjzG7DYh26Ha
+        oauth:
+            key: http://stage.sedexonline.com/sso/oauth/token?grant_type={grant_type}&scope={scope}&client-id={client-id}
+            register:
+                client: http://stage.sedexonline.com/sso/oauth-clients/{client-id}
+            userid: app-exchange
+            userpass: fc5e038d38a57032085441e7fe7010b0
+spring:
+    oauth2:
+        jwt:
+            verifier-key: AAAAB3NzaC1yc2EAAAADAQABAAACAQC/b6WEPuJ5UpHk34wM7mBSJ3dSRn3M/UvDyVss0ysQO1Gc8CzjPsGBf+agOP9oCYvIOXq8D5/qLC30ezo3BBFdhfr3k7MO6vePYoKqzfnnA11AJMt7A9xWrcE2cPiFWW6IU6OFyWjKEOvEWRMI3O6wMxuGTT5NeBegxiXRriTNKBu+g/S4A1d+h7MOYbZt6vxpwSFDqiDZ8fjtdf9Is1Fn52S2KV/zVza5Gnm30XRmTyou5RzjUIosJUAq/fSXVf5cHl3IDU2p9zFRsoEzMOoZXfANl2KsqBA/6Nez/pbGLI14P/3TnBX2nyKyiG285IsMINBlojkM1d/iIjRuBWTy8Ey+zZPXSPfn8idjyLHZq+QWX/7hi11JhbU/JZvOIiea78hlduqS2foYDDz7c+2StvPKo0x7U9IuZg//knEdM/CDR/Pmix0fHzxTl5PSFzL++ngQ6xQHM15jCiROUuFhBnGn9QAisS4Te4aTOMZRNbaQywAbV6iiHzmBWtvhmxXOTlp9RVUtUvUpmW9P6lAdOEdd5LootK0BvxfjjeLzttHNsha3HuMCFk+3iF5XTqIDdHeTF+xkodnPZVPRwCiCwkHwpa1YkKD2K5El3Iqp+eOqrVHlJKTXAycUfk9/9+hB1rp6nVgIeIlUgNKqR1KhfEeMSpp5Fu1ZYWFAVjr1lw==
+            verifier-scope: appx
+
