@@ -273,7 +273,11 @@ server:
         key-store-password: qazwsxedc
 spring:
     profiles:
-        active: dev
+        active: dev        
+    oauth2:
+        jwt:
+            verifier-key: AAAAB3NzaC1yc2EAAAADAQABAAACAQC/b6WEPuJ5UpHk34wM7mBSJ3dSRn3M/UvDyVss0ysQO1Gc8CzjPsGBf+agOP9oCYvIOXq8D5/qLC30ezo3BBFdhfr3k7MO6vePYoKqzfnnA11AJMt7A9xWrcE2cPiFWW6IU6OFyWjKEOvEWRMI3O6wMxuGTT5NeBegxiXRriTNKBu+g/S4A1d+h7MOYbZt6vxpwSFDqiDZ8fjtdf9Is1Fn52S2KV/zVza5Gnm30XRmTyou5RzjUIosJUAq/fSXVf5cHl3IDU2p9zFRsoEzMOoZXfANl2KsqBA/6Nez/pbGLI14P/3TnBX2nyKyiG285IsMINBlojkM1d/iIjRuBWTy8Ey+zZPXSPfn8idjyLHZq+QWX/7hi11JhbU/JZvOIiea78hlduqS2foYDDz7c+2StvPKo0x7U9IuZg//knEdM/CDR/Pmix0fHzxTl5PSFzL++ngQ6xQHM15jCiROUuFhBnGn9QAisS4Te4aTOMZRNbaQywAbV6iiHzmBWtvhmxXOTlp9RVUtUvUpmW9P6lAdOEdd5LootK0BvxfjjeLzttHNsha3HuMCFk+3iF5XTqIDdHeTF+xkodnPZVPRwCiCwkHwpa1YkKD2K5El3Iqp+eOqrVHlJKTXAycUfk9/9+hB1rp6nVgIeIlUgNKqR1KhfEeMSpp5Fu1ZYWFAVjr1lw==
+            verifier-scope: appx
 app:
     cdn: google
     service:
@@ -319,11 +323,6 @@ sedex:
                 client: http://stage.sedexonline.com/sso/oauth-clients/{client-id}
             userid: app-exchange
             userpass: fc5e038d38a57032085441e7fe7010b0
-spring:
-    oauth2:
-        jwt:
-            verifier-key: AAAAB3NzaC1yc2EAAAADAQABAAACAQC/b6WEPuJ5UpHk34wM7mBSJ3dSRn3M/UvDyVss0ysQO1Gc8CzjPsGBf+agOP9oCYvIOXq8D5/qLC30ezo3BBFdhfr3k7MO6vePYoKqzfnnA11AJMt7A9xWrcE2cPiFWW6IU6OFyWjKEOvEWRMI3O6wMxuGTT5NeBegxiXRriTNKBu+g/S4A1d+h7MOYbZt6vxpwSFDqiDZ8fjtdf9Is1Fn52S2KV/zVza5Gnm30XRmTyou5RzjUIosJUAq/fSXVf5cHl3IDU2p9zFRsoEzMOoZXfANl2KsqBA/6Nez/pbGLI14P/3TnBX2nyKyiG285IsMINBlojkM1d/iIjRuBWTy8Ey+zZPXSPfn8idjyLHZq+QWX/7hi11JhbU/JZvOIiea78hlduqS2foYDDz7c+2StvPKo0x7U9IuZg//knEdM/CDR/Pmix0fHzxTl5PSFzL++ngQ6xQHM15jCiROUuFhBnGn9QAisS4Te4aTOMZRNbaQywAbV6iiHzmBWtvhmxXOTlp9RVUtUvUpmW9P6lAdOEdd5LootK0BvxfjjeLzttHNsha3HuMCFk+3iF5XTqIDdHeTF+xkodnPZVPRwCiCwkHwpa1YkKD2K5El3Iqp+eOqrVHlJKTXAycUfk9/9+hB1rp6nVgIeIlUgNKqR1KhfEeMSpp5Fu1ZYWFAVjr1lw==
-            verifier-scope: appx
 
 ---
 dataSource:
@@ -371,6 +370,10 @@ server:
 spring:
     profiles:
         active: qa
+    oauth2:
+        jwt:
+            verifier-key: AAAAB3NzaC1yc2EAAAADAQABAAACAQC/b6WEPuJ5UpHk34wM7mBSJ3dSRn3M/UvDyVss0ysQO1Gc8CzjPsGBf+agOP9oCYvIOXq8D5/qLC30ezo3BBFdhfr3k7MO6vePYoKqzfnnA11AJMt7A9xWrcE2cPiFWW6IU6OFyWjKEOvEWRMI3O6wMxuGTT5NeBegxiXRriTNKBu+g/S4A1d+h7MOYbZt6vxpwSFDqiDZ8fjtdf9Is1Fn52S2KV/zVza5Gnm30XRmTyou5RzjUIosJUAq/fSXVf5cHl3IDU2p9zFRsoEzMOoZXfANl2KsqBA/6Nez/pbGLI14P/3TnBX2nyKyiG285IsMINBlojkM1d/iIjRuBWTy8Ey+zZPXSPfn8idjyLHZq+QWX/7hi11JhbU/JZvOIiea78hlduqS2foYDDz7c+2StvPKo0x7U9IuZg//knEdM/CDR/Pmix0fHzxTl5PSFzL++ngQ6xQHM15jCiROUuFhBnGn9QAisS4Te4aTOMZRNbaQywAbV6iiHzmBWtvhmxXOTlp9RVUtUvUpmW9P6lAdOEdd5LootK0BvxfjjeLzttHNsha3HuMCFk+3iF5XTqIDdHeTF+xkodnPZVPRwCiCwkHwpa1YkKD2K5El3Iqp+eOqrVHlJKTXAycUfk9/9+hB1rp6nVgIeIlUgNKqR1KhfEeMSpp5Fu1ZYWFAVjr1lw==
+            verifier-scope: appx
 app:
     cdn: google
     service:
@@ -416,11 +419,6 @@ sedex:
                 client: http://stage.sedexonline.com/sso/oauth-clients/{client-id}
             userid: app-exchange
             userpass: fc5e038d38a57032085441e7fe7010b0
-spring:
-    oauth2:
-        jwt:
-            verifier-key: AAAAB3NzaC1yc2EAAAADAQABAAACAQC/b6WEPuJ5UpHk34wM7mBSJ3dSRn3M/UvDyVss0ysQO1Gc8CzjPsGBf+agOP9oCYvIOXq8D5/qLC30ezo3BBFdhfr3k7MO6vePYoKqzfnnA11AJMt7A9xWrcE2cPiFWW6IU6OFyWjKEOvEWRMI3O6wMxuGTT5NeBegxiXRriTNKBu+g/S4A1d+h7MOYbZt6vxpwSFDqiDZ8fjtdf9Is1Fn52S2KV/zVza5Gnm30XRmTyou5RzjUIosJUAq/fSXVf5cHl3IDU2p9zFRsoEzMOoZXfANl2KsqBA/6Nez/pbGLI14P/3TnBX2nyKyiG285IsMINBlojkM1d/iIjRuBWTy8Ey+zZPXSPfn8idjyLHZq+QWX/7hi11JhbU/JZvOIiea78hlduqS2foYDDz7c+2StvPKo0x7U9IuZg//knEdM/CDR/Pmix0fHzxTl5PSFzL++ngQ6xQHM15jCiROUuFhBnGn9QAisS4Te4aTOMZRNbaQywAbV6iiHzmBWtvhmxXOTlp9RVUtUvUpmW9P6lAdOEdd5LootK0BvxfjjeLzttHNsha3HuMCFk+3iF5XTqIDdHeTF+xkodnPZVPRwCiCwkHwpa1YkKD2K5El3Iqp+eOqrVHlJKTXAycUfk9/9+hB1rp6nVgIeIlUgNKqR1KhfEeMSpp5Fu1ZYWFAVjr1lw==
-            verifier-scope: appx
 
 ---
 dataSource:
@@ -468,6 +466,10 @@ server:
 spring:
     profiles:
         active: staging
+    oauth2:
+        jwt:
+            verifier-key: AAAAB3NzaC1yc2EAAAADAQABAAACAQC/b6WEPuJ5UpHk34wM7mBSJ3dSRn3M/UvDyVss0ysQO1Gc8CzjPsGBf+agOP9oCYvIOXq8D5/qLC30ezo3BBFdhfr3k7MO6vePYoKqzfnnA11AJMt7A9xWrcE2cPiFWW6IU6OFyWjKEOvEWRMI3O6wMxuGTT5NeBegxiXRriTNKBu+g/S4A1d+h7MOYbZt6vxpwSFDqiDZ8fjtdf9Is1Fn52S2KV/zVza5Gnm30XRmTyou5RzjUIosJUAq/fSXVf5cHl3IDU2p9zFRsoEzMOoZXfANl2KsqBA/6Nez/pbGLI14P/3TnBX2nyKyiG285IsMINBlojkM1d/iIjRuBWTy8Ey+zZPXSPfn8idjyLHZq+QWX/7hi11JhbU/JZvOIiea78hlduqS2foYDDz7c+2StvPKo0x7U9IuZg//knEdM/CDR/Pmix0fHzxTl5PSFzL++ngQ6xQHM15jCiROUuFhBnGn9QAisS4Te4aTOMZRNbaQywAbV6iiHzmBWtvhmxXOTlp9RVUtUvUpmW9P6lAdOEdd5LootK0BvxfjjeLzttHNsha3HuMCFk+3iF5XTqIDdHeTF+xkodnPZVPRwCiCwkHwpa1YkKD2K5El3Iqp+eOqrVHlJKTXAycUfk9/9+hB1rp6nVgIeIlUgNKqR1KhfEeMSpp5Fu1ZYWFAVjr1lw==
+            verifier-scope: appx
 app:
     cdn: google
     service:
@@ -513,11 +515,6 @@ sedex:
                 client: http://stage.sedexonline.com/sso/oauth-clients/{client-id}
             userid: app-exchange
             userpass: fc5e038d38a57032085441e7fe7010b0
-spring:
-    oauth2:
-        jwt:
-            verifier-key: AAAAB3NzaC1yc2EAAAADAQABAAACAQC/b6WEPuJ5UpHk34wM7mBSJ3dSRn3M/UvDyVss0ysQO1Gc8CzjPsGBf+agOP9oCYvIOXq8D5/qLC30ezo3BBFdhfr3k7MO6vePYoKqzfnnA11AJMt7A9xWrcE2cPiFWW6IU6OFyWjKEOvEWRMI3O6wMxuGTT5NeBegxiXRriTNKBu+g/S4A1d+h7MOYbZt6vxpwSFDqiDZ8fjtdf9Is1Fn52S2KV/zVza5Gnm30XRmTyou5RzjUIosJUAq/fSXVf5cHl3IDU2p9zFRsoEzMOoZXfANl2KsqBA/6Nez/pbGLI14P/3TnBX2nyKyiG285IsMINBlojkM1d/iIjRuBWTy8Ey+zZPXSPfn8idjyLHZq+QWX/7hi11JhbU/JZvOIiea78hlduqS2foYDDz7c+2StvPKo0x7U9IuZg//knEdM/CDR/Pmix0fHzxTl5PSFzL++ngQ6xQHM15jCiROUuFhBnGn9QAisS4Te4aTOMZRNbaQywAbV6iiHzmBWtvhmxXOTlp9RVUtUvUpmW9P6lAdOEdd5LootK0BvxfjjeLzttHNsha3HuMCFk+3iF5XTqIDdHeTF+xkodnPZVPRwCiCwkHwpa1YkKD2K5El3Iqp+eOqrVHlJKTXAycUfk9/9+hB1rp6nVgIeIlUgNKqR1KhfEeMSpp5Fu1ZYWFAVjr1lw==
-            verifier-scope: appx
 
 ---
 dataSource:
@@ -565,6 +562,10 @@ server:
 spring:
     profiles:
         active: prod
+    oauth2:
+        jwt:
+            verifier-key: AAAAB3NzaC1yc2EAAAADAQABAAACAQC/b6WEPuJ5UpHk34wM7mBSJ3dSRn3M/UvDyVss0ysQO1Gc8CzjPsGBf+agOP9oCYvIOXq8D5/qLC30ezo3BBFdhfr3k7MO6vePYoKqzfnnA11AJMt7A9xWrcE2cPiFWW6IU6OFyWjKEOvEWRMI3O6wMxuGTT5NeBegxiXRriTNKBu+g/S4A1d+h7MOYbZt6vxpwSFDqiDZ8fjtdf9Is1Fn52S2KV/zVza5Gnm30XRmTyou5RzjUIosJUAq/fSXVf5cHl3IDU2p9zFRsoEzMOoZXfANl2KsqBA/6Nez/pbGLI14P/3TnBX2nyKyiG285IsMINBlojkM1d/iIjRuBWTy8Ey+zZPXSPfn8idjyLHZq+QWX/7hi11JhbU/JZvOIiea78hlduqS2foYDDz7c+2StvPKo0x7U9IuZg//knEdM/CDR/Pmix0fHzxTl5PSFzL++ngQ6xQHM15jCiROUuFhBnGn9QAisS4Te4aTOMZRNbaQywAbV6iiHzmBWtvhmxXOTlp9RVUtUvUpmW9P6lAdOEdd5LootK0BvxfjjeLzttHNsha3HuMCFk+3iF5XTqIDdHeTF+xkodnPZVPRwCiCwkHwpa1YkKD2K5El3Iqp+eOqrVHlJKTXAycUfk9/9+hB1rp6nVgIeIlUgNKqR1KhfEeMSpp5Fu1ZYWFAVjr1lw==
+            verifier-scope: appx
 app:
     cdn: google
     service:
@@ -610,9 +611,4 @@ sedex:
                 client: http://stage.sedexonline.com/sso/oauth-clients/{client-id}
             userid: app-exchange
             userpass: fc5e038d38a57032085441e7fe7010b0
-spring:
-    oauth2:
-        jwt:
-            verifier-key: AAAAB3NzaC1yc2EAAAADAQABAAACAQC/b6WEPuJ5UpHk34wM7mBSJ3dSRn3M/UvDyVss0ysQO1Gc8CzjPsGBf+agOP9oCYvIOXq8D5/qLC30ezo3BBFdhfr3k7MO6vePYoKqzfnnA11AJMt7A9xWrcE2cPiFWW6IU6OFyWjKEOvEWRMI3O6wMxuGTT5NeBegxiXRriTNKBu+g/S4A1d+h7MOYbZt6vxpwSFDqiDZ8fjtdf9Is1Fn52S2KV/zVza5Gnm30XRmTyou5RzjUIosJUAq/fSXVf5cHl3IDU2p9zFRsoEzMOoZXfANl2KsqBA/6Nez/pbGLI14P/3TnBX2nyKyiG285IsMINBlojkM1d/iIjRuBWTy8Ey+zZPXSPfn8idjyLHZq+QWX/7hi11JhbU/JZvOIiea78hlduqS2foYDDz7c+2StvPKo0x7U9IuZg//knEdM/CDR/Pmix0fHzxTl5PSFzL++ngQ6xQHM15jCiROUuFhBnGn9QAisS4Te4aTOMZRNbaQywAbV6iiHzmBWtvhmxXOTlp9RVUtUvUpmW9P6lAdOEdd5LootK0BvxfjjeLzttHNsha3HuMCFk+3iF5XTqIDdHeTF+xkodnPZVPRwCiCwkHwpa1YkKD2K5El3Iqp+eOqrVHlJKTXAycUfk9/9+hB1rp6nVgIeIlUgNKqR1KhfEeMSpp5Fu1ZYWFAVjr1lw==
-            verifier-scope: appx
 
