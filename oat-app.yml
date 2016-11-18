@@ -1,0 +1,46 @@
+server:
+    port: 9001
+    ssl:
+        key-password: dBIeKf2DQHY7VVx
+        key-store: classpath:sedex-2016.jks
+        key-store-password: dBIeKf2DQHY7VVx
+spring:
+    profiles: dev
+
+env:
+    gatewayEndpoint: https://stage.sedexonline.com/api/v1
+    ssoEndpoint: https://stage.sedexonline.com/sso/oauth/authorize?client_id=oat&response_type=token&scope=oat%20profile&redirect_uri=
+    ssoEndpointSignout: https://stage.sedexonline.com/sso/app/singlelogout
+    ssoOauthRedirectURL: http://172.25.100.165:9001
+---
+
+server:
+    port: 9001
+    ssl:
+        key-password: dBIeKf2DQHY7VVx
+        key-store: classpath:sedex-2016.jks
+        key-store-password: dBIeKf2DQHY7VVx
+spring:
+    profiles: qa
+
+env:
+    gatewayEndpoint: https://stage.sedexonline.com/api/v1
+    ssoEndpoint: https://stage.sedexonline.com/sso/oauth/authorize?client_id=oat&response_type=token&scope=oat%20profile&redirect_uri=
+    ssoEndpointSignout: https://stage.sedexonline.com/sso/app/singlelogout
+    ssoOauthRedirectURL: http://172.25.100.165:9001    
+---
+
+server:
+    port: 443
+    ssl:
+        key-password: dBIeKf2DQHY7VVx
+        key-store: classpath:sedex-2016.jks
+        key-store-password: dBIeKf2DQHY7VVx
+spring:
+    profiles: stag
+
+env:
+    gatewayEndpoint: https://stage.sedexonline.com/api/v1
+    ssoEndpoint: https://stage.sedexonline.com/sso/oauth/authorize?client_id=oat&response_type=token&scope=oat%20profile&redirect_uri=
+    ssoEndpointSignout: https://stage.sedexonline.com/sso/app/singlelogout
+    ssoOauthRedirectURL: http://172.25.100.165:9001
